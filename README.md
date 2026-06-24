@@ -286,38 +286,38 @@ filter: brightness(0.85);
 
 <div class="review-card">
 <div class="review-stars">★★★★★</div>
-<div class="review-text">"Absolutely incredible work on my truck. The paint correction made it look brand new. Highly recommend Nicety Auto Services!"</div>
-<div class="review-author">Marcus T.</div>
+<div class="review-text">"Kyle did an amazing job and would highly recommend them to everyone. They came and picked up my car and delivered it looking brand new!"</div>
+<div class="review-author">Shawna P.</div>
 </div>
 
 <div class="review-card">
 <div class="review-stars">★★★★★</div>
-<div class="review-text">"They came right to my driveway and did a flawless ceramic coating. Customer service was top notch. Will be back for sure."</div>
-<div class="review-author">Jasmine R.</div>
+<div class="review-text">"Man, I feel like i'm in a new vehicle fresh from the car dealership! Highly Recomment!!"</div>
+<div class="review-author">Mark M.</div>
 </div>
 
 <div class="review-card">
 <div class="review-stars">★★★★★</div>
-<div class="review-text">"Got the starlight headliner installed — everyone who rides in my car is blown away. The craftsmanship is elite."</div>
-<div class="review-author">Derek W.</div>
+<div class="review-text">"Qaulity work and amazing attention to detail done in a timely fasion. Very good value would highly recommend to anyone."</div>
+<div class="review-author">Angelo C.</div>
 </div>
 
 <div class="review-card">
 <div class="review-stars">★★★★★</div>
-<div class="review-text">"Super professional, on time, and my car looks better than when I bought it. Best detailing service in Wichita!"</div>
-<div class="review-author">Angela M.</div>
+<div class="review-text">"Kyle from Nicety came out and did an excellent job on a full detail on my Ram and Ford. Going to be using this company again!"</div>
+<div class="review-author">Dakota C.</div>
 </div>
 
 <div class="review-card">
 <div class="review-stars">★★★★★</div>
-<div class="review-text">"The window tint job was perfect — no bubbles, clean lines. Fast turnaround too. Definitely coming back."</div>
-<div class="review-author">Kevin S.</div>
+<div class="review-text">"Did an amazing job on my vehicle! Would totally recommend, Super nice and responsive as well!"</div>
+<div class="review-author">Jason S.</div>
 </div>
 
 <div class="review-card">
 <div class="review-stars">★★★★★</div>
-<div class="review-text">"I got a full detail and ceramic coat package. Worth every penny. My car literally repels water now. Amazing!"</div>
-<div class="review-author">Brittany L.</div>
+<div class="review-text">"Amazing customer service and results! I have two young kids who destroy my car but Kyle always brubgs it back to like! Efficient, kind, and reasonably priced!"</div>
+<div class="review-author">Skylar M.</div>
 </div>
 
 </div>
