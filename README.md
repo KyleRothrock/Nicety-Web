@@ -1,5 +1,8 @@
-# Nicety-Web
-Business Services Website
+
+Kyle Rothrock
+3:10 PM (0 minutes ago)
+to me
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +40,6 @@ line-height: 1.6;
 -webkit-font-smoothing: antialiased;
 }
 
-/* ── TOP BAR ── */
 .topbar {
 background: rgba(10,10,10,0.95);
 backdrop-filter: blur(12px);
@@ -70,7 +72,6 @@ transition: color 0.2s;
 }
 .topbar-right a:hover { color: var(--white); }
 
-/* ── HERO ── */
 .hero {
 min-height: 92vh;
 display: flex;
@@ -113,10 +114,7 @@ letter-spacing: -1px;
 color: var(--white);
 margin-bottom: 24px;
 }
-.hero-title em {
-font-style: italic;
-color: var(--blue);
-}
+.hero-title em { font-style: italic; color: var(--blue); }
 .hero-sub {
 font-size: 16px;
 color: var(--white-dim);
@@ -125,7 +123,6 @@ margin: 0 auto 48px;
 line-height: 1.7;
 }
 
-/* BOOK NOW — the main event */
 .btn-book {
 display: inline-block;
 padding: 22px 64px;
@@ -156,7 +153,6 @@ box-shadow:
 0 12px 40px rgba(59,130,246,0.4);
 }
 
-/* CONTACT INFO HERO */
 .hero-contact {
 display: flex;
 gap: 40px;
@@ -186,7 +182,6 @@ transition: color 0.2s;
 .hero-contact a:hover .value { color: var(--blue); }
 .hero-contact .value.blue { color: var(--blue); }
 
-/* ── SECTION BASE ── */
 section { padding: 96px 24px; }
 .section-inner { max-width: 1100px; margin: 0 auto; }
 .section-eyebrow {
@@ -206,7 +201,6 @@ margin-bottom: 48px;
 }
 .section-title em { font-style: italic; color: var(--blue); }
 
-/* ── SERVICES ── */
 .services-grid {
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -226,7 +220,236 @@ height: 200px;
 object-fit: cover;
 display: block;
 filter: brightness(0.85);
-< truncated lines 227-469 >
+transition: filter 0.3s, transform 0.4s;
+}
+.service-card:hover img { filter: brightness(1); transform: scale(1.03); }
+.service-card-body { padding: 22px 24px 26px; }
+.service-card-name {
+font-family: var(--display);
+font-size: 22px;
+font-weight: 400;
+margin-bottom: 8px;
+letter-spacing: 0.3px;
+}
+.service-card-desc {
+font-size: 13px;
+color: var(--white-dim);
+line-height: 1.65;
+}
+
+.reviews-section { background: var(--off-black); }
+.reviews-track-wrap {
+overflow-x: auto;
+scrollbar-width: none;
+cursor: grab;
+-webkit-overflow-scrolling: touch;
+}
+.reviews-track-wrap::-webkit-scrollbar { display: none; }
+.reviews-track {
+display: flex;
+gap: 16px;
+padding-bottom: 12px;
+width: max-content;
+}
+.review-card {
+background: var(--card);
+border: 1px solid var(--border);
+border-radius: 4px;
+padding: 28px 28px 24px;
+width: 300px;
+flex-shrink: 0;
+}
+.review-stars { color: var(--yellow); font-size: 16px; margin-bottom: 14px; letter-spacing: 2px; }
+.review-text {
+font-size: 13.5px;
+color: var(--white-dim);
+line-height: 1.7;
+margin-bottom: 18px;
+font-style: italic;
+}
+.review-author {
+font-size: 12px;
+font-weight: 600;
+letter-spacing: 1px;
+text-transform: uppercase;
+color: var(--white);
+}
+.scroll-hint {
+font-size: 11px;
+letter-spacing: 2px;
+color: rgba(255,255,255,0.2);
+text-align: center;
+margin-top: 20px;
+text-transform: uppercase;
+}
+
+.ba-track-wrap {
+overflow-x: auto;
+scrollbar-width: none;
+cursor: grab;
+-webkit-overflow-scrolling: touch;
+}
+.ba-track-wrap::-webkit-scrollbar { display: none; }
+.ba-track {
+display: flex;
+gap: 16px;
+padding-bottom: 12px;
+width: max-content;
+}
+.ba-card { width: 480px; flex-shrink: 0; }
+.ba-pair {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 4px;
+border-radius: 4px;
+overflow: hidden;
+}
+.ba-img-wrap { position: relative; }
+.ba-img-wrap img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+display: block;
+}
+.ba-label {
+position: absolute;
+bottom: 10px;
+left: 10px;
+font-size: 10px;
+letter-spacing: 2px;
+text-transform: uppercase;
+background: rgba(0,0,0,0.7);
+color: var(--white);
+padding: 4px 10px;
+border-radius: 2px;
+}
+.ba-label.after { background: rgba(59,130,246,0.8); }
+.ba-caption {
+font-size: 12px;
+color: var(--white-dim);
+text-align: center;
+margin-top: 10px;
+letter-spacing: 1px;
+}
+
+.cta-section {
+background: var(--blue-dim);
+border-top: 1px solid rgba(59,130,246,0.2);
+border-bottom: 1px solid rgba(59,130,246,0.2);
+text-align: center;
+padding: 80px 24px;
+}
+.cta-section .section-title { margin-bottom: 16px; }
+.cta-sub {
+font-size: 15px;
+color: var(--white-dim);
+margin-bottom: 40px;
+max-width: 420px;
+margin-left: auto;
+margin-right: auto;
+}
+.cta-contact {
+display: flex;
+gap: 32px;
+justify-content: center;
+flex-wrap: wrap;
+margin-top: 36px;
+}
+.cta-contact a {
+font-size: 20px;
+font-weight: 600;
+color: var(--white);
+text-decoration: none;
+letter-spacing: 0.5px;
+transition: color 0.2s;
+}
+.cta-contact a:hover { color: var(--blue); }
+
+footer {
+background: #080808;
+border-top: 1px solid var(--border);
+padding: 48px 24px;
+text-align: center;
+}
+footer img { width: 140px; margin-bottom: 20px; opacity: 0.8; }
+.footer-links {
+display: flex;
+gap: 24px;
+justify-content: center;
+flex-wrap: wrap;
+margin-bottom: 20px;
+}
+.footer-links a {
+font-size: 13px;
+color: var(--white-dim);
+text-decoration: none;
+transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--white); }
+.footer-copy {
+font-size: 11px;
+color: rgba(255,255,255,0.2);
+letter-spacing: 1px;
+}
+
+@media (max-width: 640px) {
+.topbar { padding: 12px 16px; }
+.topbar-left { font-size: 10px; }
+section { padding: 64px 16px; }
+.hero { padding: 60px 16px 48px; }
+.hero-logo { width: 160px; }
+.btn-book { padding: 18px 40px; font-size: 14px; }
+.hero-contact .value { font-size: 17px; }
+.ba-card { width: 320px; }
+.review-card { width: 260px; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+<div class="topbar-left">📍 Wichita, KS & Surrounding Areas</div>
+<div class="topbar-right">
+<a href="tel:3162083234">(316) 208-3234</a>
+<a href="#book" style="color:#3B82F6; font-weight:500;">Book Now</a>
+</div>
+</div>
+
+<section class="hero">
+<img src="IMG_1648.jpeg" alt="Nicety Auto Services Logo" class="hero-logo">
+<div class="hero-eyebrow">Mobile Auto Care · Wichita, KS</div>
+<h1 class="hero-title">Your car deserves<br><em>Nicety.</em></h1>
+<p class="hero-sub">Professional detailing, paint correction, ceramic coating, and more — delivered to your home or office.</p>
+<a href="#book" class="btn-book">Book Now</a>
+<div class="hero-contact">
+<a href="tel:3162083234">
+<span class="label">Call or Text</span>
+<span class="value">(316) 208-3234</span>
+</a>
+<a href="mailto:nicetymobile@gmail.com">
+<span class="label">Email Us</span>
+<span class="value blue">nicetymobile@gmail.com</span>
+</a>
+</div>
+</section>
+
+<section id="services">
+<div class="section-inner">
+<div class="section-eyebrow">What We Do</div>
+<h2 class="section-title">Every service your<br>vehicle <em>deserves.</em></h2>
+<div class="services-grid">
+
+<div class="service-card">
+<img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=600&q=80" alt="Mobile Detailing">
+<div class="service-card-body">
+<div class="service-card-name">Mobile Detailing</div>
+<div class="service-card-desc">Full interior & exterior detail at your home or office. We bring everything — you just unlock the car.</div>
+</div>
+</div>
+
+<div class="service-card">
+<img src="https://images.unsplash.com/photo-1617886903355-9354bb57751f?w=600&q=80" alt="Paint Correction">
+<div class="service-card-body">
 <div class="service-card-name">Paint Correction</div>
 <div class="service-card-desc">Remove swirl marks, scratches, and oxidation. Restore your paint to a deeper, truer shine than the day you bought it.</div>
 </div>
@@ -276,7 +499,6 @@ filter: brightness(0.85);
 </div>
 </section>
 
-<!-- REVIEWS -->
 <section class="reviews-section" id="reviews">
 <div class="section-inner">
 <div class="section-eyebrow">Customer Reviews</div>
@@ -316,7 +538,7 @@ filter: brightness(0.85);
 
 <div class="review-card">
 <div class="review-stars">★★★★★</div>
-<div class="review-text">"Amazing customer service and results! I have two young kids who destroy my car but Kyle always brubgs it back to like! Efficient, kind, and reasonably priced!"</div>
+<div class="review-text">"Amazing customer service and results! I have two young kids who destroy my car but Kyle always brings it back to life! Efficient, kind, and reasonably priced!"</div>
 <div class="review-author">Skylar M.</div>
 </div>
 
@@ -326,7 +548,6 @@ filter: brightness(0.85);
 </div>
 </section>
 
-<!-- BEFORE & AFTER -->
 <section id="gallery">
 <div class="section-inner">
 <div class="section-eyebrow">Before & After</div>
@@ -337,71 +558,71 @@ filter: brightness(0.85);
 <div class="ba-card">
 <div class="ba-pair">
 <div class="ba-img-wrap">
-<img src="before1.jpg" alt="Before 1" onerror="this.src='https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=400&q=70'">
+<img src="before1.png" alt="Before 1">
 <span class="ba-label">Before</span>
 </div>
 <div class="ba-img-wrap">
-<img src="after1.jpg" alt="After 1" onerror="this.src='https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=400&q=70'">
+<img src="after1.jpg" alt="After 1">
 <span class="ba-label after">After</span>
 </div>
 </div>
-<div class="ba-caption">Paint Correction · Add your photo here</div>
+<div class="ba-caption">Job 1 — Edit this caption</div>
 </div>
 
 <div class="ba-card">
 <div class="ba-pair">
 <div class="ba-img-wrap">
-<img src="before2.jpg" alt="Before 2" onerror="this.src='https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=400&q=70'">
+<img src="before3.png" alt="Before 3">
 <span class="ba-label">Before</span>
 </div>
 <div class="ba-img-wrap">
-<img src="after2.jpg" alt="After 2" onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=70'">
+<img src="after3.png" alt="After 3">
 <span class="ba-label after">After</span>
 </div>
 </div>
-<div class="ba-caption">Ceramic Coating · Add your photo here</div>
+<div class="ba-caption">Job 3 — Edit this caption</div>
 </div>
 
 <div class="ba-card">
 <div class="ba-pair">
 <div class="ba-img-wrap">
-<img src="before3.jpg" alt="Before 3" onerror="this.src='https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=400&q=70'">
+<img src="before5.png" alt="Before 5">
 <span class="ba-label">Before</span>
 </div>
 <div class="ba-img-wrap">
-<img src="after3.jpg" alt="After 3" onerror="this.src='https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=400&q=70'">
+<img src="after5.png" alt="After 5">
 <span class="ba-label after">After</span>
 </div>
 </div>
-<div class="ba-caption">Interior Detail · Add your photo here</div>
+<div class="ba-caption">Job 5 — Edit this caption</div>
 </div>
 
 <div class="ba-card">
 <div class="ba-pair">
 <div class="ba-img-wrap">
-<img src="before4.jpg" alt="Before 4" onerror="this.src='https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=400&q=70'">
+<img src="before6.png" alt="Before 6">
 <span class="ba-label">Before</span>
 </div>
 <div class="ba-img-wrap">
-<img src="after4.jpg" alt="After 4" onerror="this.src='https://images.unsplash.com/photo-1617886903355-9354bb57751f?w=400&q=70'">
+<img src="after6.png" alt="After 6">
 <span class="ba-label after">After</span>
 </div>
 </div>
-<div class="ba-caption">Full Detail · Add your photo here</div>
+<div class="ba-caption">Job 6 — Edit this caption</div>
 </div>
 
 <div class="ba-card">
 <div class="ba-pair">
 <div class="ba-img-wrap">
-<img src="before5.jpg" alt="Before 5" onerror="this.src='https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=400&q=70'">
+<img src="before7.png" alt="Before 7">
 <span class="ba-label">Before</span>
 </div>
 <div class="ba-img-wrap">
-<img src="after5.jpg" alt="After 5" onerror="this.src='https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=400&q=70'">
+<img src="after7.png" alt="After 7">
 <span class="ba-label after">After</span>
 </div>
 </div>
-<div class="ba-caption">Starlight Headliner · Add your photo here</div>
+<div class="ba-caption">Job 7 — Edit this caption</div>
 </div>
 
 </div>
@@ -410,7 +631,6 @@ filter: brightness(0.85);
 </div>
 </section>
 
-<!-- CTA -->
 <section class="cta-section" id="book">
 <div class="section-inner">
 <div class="section-eyebrow">Ready to Book?</div>
@@ -424,7 +644,6 @@ filter: brightness(0.85);
 </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
 <img src="IMG_1648.jpeg" alt="Nicety Auto Services">
 <div class="footer-links">
@@ -439,7 +658,6 @@ filter: brightness(0.85);
 </footer>
 
 <script>
-// Drag to scroll for reviews
 function dragScroll(el) {
 let isDown = false, startX, scrollLeft;
 el.addEventListener('mousedown', e => { isDown = true; el.style.cursor = 'grabbing'; startX = e.pageX - el.offsetLeft; scrollLeft = el.scrollLeft; });
