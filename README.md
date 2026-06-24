@@ -1,8 +1,3 @@
-
-Kyle Rothrock
-3:10 PM (0 minutes ago)
-to me
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -566,7 +561,7 @@ section { padding: 64px 16px; }
 <span class="ba-label after">After</span>
 </div>
 </div>
-<div class="ba-caption">Job 1 — Edit this caption</div>
+<div class="ba-caption"></div>
 </div>
 
 <div class="ba-card">
@@ -580,7 +575,7 @@ section { padding: 64px 16px; }
 <span class="ba-label after">After</span>
 </div>
 </div>
-<div class="ba-caption">Job 3 — Edit this caption</div>
+<div class="ba-caption"></div>
 </div>
 
 <div class="ba-card">
@@ -594,7 +589,7 @@ section { padding: 64px 16px; }
 <span class="ba-label after">After</span>
 </div>
 </div>
-<div class="ba-caption">Job 5 — Edit this caption</div>
+<div class="ba-caption"></div>
 </div>
 
 <div class="ba-card">
@@ -608,7 +603,7 @@ section { padding: 64px 16px; }
 <span class="ba-label after">After</span>
 </div>
 </div>
-<div class="ba-caption">Job 6 — Edit this caption</div>
+<div class="ba-caption"></div>
 </div>
 
 <div class="ba-card">
@@ -622,7 +617,7 @@ section { padding: 64px 16px; }
 <span class="ba-label after">After</span>
 </div>
 </div>
-<div class="ba-caption">Job 7 — Edit this caption</div>
+<div class="ba-caption"></div>
 </div>
 
 </div>
