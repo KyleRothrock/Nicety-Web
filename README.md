@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
 :root {
 --black: #0A0A0A;
 --off-black: #111111;
@@ -23,9 +23,9 @@
 --display: 'Cormorant Garamond', serif;
 --body: 'DM Sans', sans-serif;
 }
-
+ 
 html { scroll-behavior: smooth; }
-
+ 
 body {
 background: var(--black);
 color: var(--white);
@@ -34,7 +34,7 @@ font-weight: 300;
 line-height: 1.6;
 -webkit-font-smoothing: antialiased;
 }
-
+ 
 .topbar {
 background: rgba(10,10,10,0.95);
 backdrop-filter: blur(12px);
@@ -66,7 +66,7 @@ text-decoration: none;
 transition: color 0.2s;
 }
 .topbar-right a:hover { color: var(--white); }
-
+ 
 .hero {
 min-height: 92vh;
 display: flex;
@@ -83,8 +83,8 @@ content: '';
 position: absolute;
 inset: 0;
 background:
-radial-gradient(ellipse 70% 50% at 50% 20%, rgba(59,130,246,0.1) 0%, transparent 60%),
-radial-gradient(ellipse 50% 40% at 80% 80%, rgba(59,130,246,0.05) 0%, transparent 50%);
+  radial-gradient(ellipse 70% 50% at 50% 20%, rgba(59,130,246,0.1) 0%, transparent 60%),
+  radial-gradient(ellipse 50% 40% at 80% 80%, rgba(59,130,246,0.05) 0%, transparent 50%);
 pointer-events: none;
 }
 .hero-logo {
@@ -117,7 +117,7 @@ max-width: 480px;
 margin: 0 auto 48px;
 line-height: 1.7;
 }
-
+ 
 .btn-book {
 display: inline-block;
 padding: 22px 64px;
@@ -134,20 +134,20 @@ border: none;
 cursor: pointer;
 position: relative;
 box-shadow:
-0 0 28px rgba(59,130,246,0.55),
-0 0 60px rgba(59,130,246,0.25),
-0 8px 32px rgba(59,130,246,0.3);
+  0 0 28px rgba(59,130,246,0.55),
+  0 0 60px rgba(59,130,246,0.25),
+  0 8px 32px rgba(59,130,246,0.3);
 transition: transform 0.2s, box-shadow 0.2s;
 margin-bottom: 48px;
 }
 .btn-book:hover {
 transform: translateY(-2px);
 box-shadow:
-0 0 40px rgba(59,130,246,0.7),
-0 0 80px rgba(59,130,246,0.35),
-0 12px 40px rgba(59,130,246,0.4);
+  0 0 40px rgba(59,130,246,0.7),
+  0 0 80px rgba(59,130,246,0.35),
+  0 12px 40px rgba(59,130,246,0.4);
 }
-
+ 
 .hero-contact {
 display: flex;
 gap: 40px;
@@ -176,7 +176,7 @@ transition: color 0.2s;
 }
 .hero-contact a:hover .value { color: var(--blue); }
 .hero-contact .value.blue { color: var(--blue); }
-
+ 
 section { padding: 96px 24px; }
 .section-inner { max-width: 1100px; margin: 0 auto; }
 .section-eyebrow {
@@ -195,7 +195,7 @@ line-height: 1.1;
 margin-bottom: 48px;
 }
 .section-title em { font-style: italic; color: var(--blue); }
-
+ 
 .services-grid {
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -231,7 +231,7 @@ font-size: 13px;
 color: var(--white-dim);
 line-height: 1.65;
 }
-
+ 
 .reviews-section { background: var(--off-black); }
 .reviews-track-wrap {
 overflow-x: auto;
@@ -277,7 +277,7 @@ text-align: center;
 margin-top: 20px;
 text-transform: uppercase;
 }
-
+ 
 .ba-track-wrap {
 overflow-x: auto;
 scrollbar-width: none;
@@ -326,7 +326,7 @@ text-align: center;
 margin-top: 10px;
 letter-spacing: 1px;
 }
-
+ 
 .cta-section {
 background: var(--blue-dim);
 border-top: 1px solid rgba(59,130,246,0.2);
@@ -359,7 +359,7 @@ letter-spacing: 0.5px;
 transition: color 0.2s;
 }
 .cta-contact a:hover { color: var(--blue); }
-
+ 
 footer {
 background: #080808;
 border-top: 1px solid var(--border);
@@ -386,7 +386,7 @@ font-size: 11px;
 color: rgba(255,255,255,0.2);
 letter-spacing: 1px;
 }
-
+ 
 @media (max-width: 640px) {
 .topbar { padding: 12px 16px; }
 .topbar-left { font-size: 10px; }
@@ -401,268 +401,268 @@ section { padding: 64px 16px; }
 </style>
 </head>
 <body>
-
+ 
 <div class="topbar">
-<div class="topbar-left">📍 Wichita, KS & Surrounding Areas</div>
-<div class="topbar-right">
-<a href="tel:3162083234">(316) 208-3234</a>
-<a href="#book" style="color:#3B82F6; font-weight:500;">Book Now</a>
+  <div class="topbar-left">📍 Wichita, KS & Surrounding Areas</div>
+  <div class="topbar-right">
+    <a href="tel:3162083234">(316) 208-3234</a>
+    <a href="https://meetings-na2.hubspot.com/kyle-rothrock" target="_blank" style="color:#3B82F6; font-weight:500;">Book Now</a>
+  </div>
 </div>
-</div>
-
+ 
 <section class="hero">
-<img src="IMG_1648.jpeg" alt="Nicety Auto Services Logo" class="hero-logo">
-<div class="hero-eyebrow">Mobile Auto Care · Wichita, KS</div>
-<h1 class="hero-title">Your car deserves<br><em>Nicety.</em></h1>
-<p class="hero-sub">Professional detailing, paint correction, ceramic coating, and more — delivered to your home or office.</p>
-<a href="#book" class="btn-book">Book Now</a>
-<div class="hero-contact">
-<a href="tel:3162083234">
-<span class="label">Call or Text</span>
-<span class="value">(316) 208-3234</span>
-</a>
-<a href="mailto:nicetymobile@gmail.com">
-<span class="label">Email Us</span>
-<span class="value blue">nicetymobile@gmail.com</span>
-</a>
-</div>
+  <img src="IMG_1648.jpeg" alt="Nicety Auto Services Logo" class="hero-logo">
+  <div class="hero-eyebrow">Mobile Auto Care · Wichita, KS</div>
+  <h1 class="hero-title">Your car deserves<br><em>Nicety.</em></h1>
+  <p class="hero-sub">Professional detailing, paint correction, ceramic coating, and more — delivered to your home or office.</p>
+  <a href="https://meetings-na2.hubspot.com/kyle-rothrock" target="_blank" class="btn-book">Book Now</a>
+  <div class="hero-contact">
+    <a href="tel:3162083234">
+      <span class="label">Call or Text</span>
+      <span class="value">(316) 208-3234</span>
+    </a>
+    <a href="mailto:nicetymobile@gmail.com">
+      <span class="label">Email Us</span>
+      <span class="value blue">nicetymobile@gmail.com</span>
+    </a>
+  </div>
 </section>
-
+ 
 <section id="services">
-<div class="section-inner">
-<div class="section-eyebrow">What We Do</div>
-<h2 class="section-title">Every service your<br>vehicle <em>deserves.</em></h2>
-<div class="services-grid">
-
-<div class="service-card">
-<img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=600&q=80" alt="Mobile Detailing">
-<div class="service-card-body">
-<div class="service-card-name">Mobile Detailing</div>
-<div class="service-card-desc">Full interior & exterior detail at your home or office. We bring everything — you just unlock the car.</div>
-</div>
-</div>
-
-<div class="service-card">
-<img src="https://images.unsplash.com/photo-1617886903355-9354bb57751f?w=600&q=80" alt="Paint Correction">
-<div class="service-card-body">
-<div class="service-card-name">Paint Correction</div>
-<div class="service-card-desc">Remove swirl marks, scratches, and oxidation. Restore your paint to a deeper, truer shine than the day you bought it.</div>
-</div>
-</div>
-
-<div class="service-card">
-<img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Ceramic Coating">
-<div class="service-card-body">
-<div class="service-card-name">Ceramic Coating</div>
-<div class="service-card-desc">Nano-ceramic protection that bonds to your paint — repels water, dirt, and UV damage for years.</div>
-</div>
-</div>
-
-<div class="service-card">
-<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&q=80" alt="Starlight Headliner">
-<div class="service-card-body">
-<div class="service-card-name">Starlight Headliners</div>
-<div class="service-card-desc">Transform your interior with a custom fiber-optic starlight ceiling. The install everyone talks about.</div>
-</div>
-</div>
-
-<div class="service-card">
-<img src="https://images.unsplash.com/photo-1562141961-b8ab0ce9d10a?w=600&q=80" alt="Window Tint">
-<div class="service-card-body">
-<div class="service-card-name">Window Tint</div>
-<div class="service-card-desc">Premium films for heat rejection, UV protection, and a clean blacked-out look.</div>
-</div>
-</div>
-
-<div class="service-card">
-<img src="https://images.unsplash.com/photo-1611016186353-9af58c69a533?w=600&q=80" alt="Vehicle Wraps">
-<div class="service-card-body">
-<div class="service-card-name">Wraps</div>
-<div class="service-card-desc">Full and partial vehicle wraps in any color or finish — matte, gloss, satin, or chrome.</div>
-</div>
-</div>
-
-<div class="service-card">
-<img src="https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?w=600&q=80" alt="Audio Install">
-<div class="service-card-body">
-<div class="service-card-name">Audio Install</div>
-<div class="service-card-desc">Custom audio systems — head units, speakers, subwoofers, and amplifiers installed clean.</div>
-</div>
-</div>
-
-</div>
-</div>
+  <div class="section-inner">
+    <div class="section-eyebrow">What We Do</div>
+    <h2 class="section-title">Every service your<br>vehicle <em>deserves.</em></h2>
+    <div class="services-grid">
+ 
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=600&q=80" alt="Mobile Detailing">
+        <div class="service-card-body">
+          <div class="service-card-name">Mobile Detailing</div>
+          <div class="service-card-desc">Full interior & exterior detail at your home or office. We bring everything — you just unlock the car.</div>
+        </div>
+      </div>
+ 
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1617886903355-9354bb57751f?w=600&q=80" alt="Paint Correction">
+        <div class="service-card-body">
+          <div class="service-card-name">Paint Correction</div>
+          <div class="service-card-desc">Remove swirl marks, scratches, and oxidation. Restore your paint to a deeper, truer shine than the day you bought it.</div>
+        </div>
+      </div>
+ 
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Ceramic Coating">
+        <div class="service-card-body">
+          <div class="service-card-name">Ceramic Coating</div>
+          <div class="service-card-desc">Nano-ceramic protection that bonds to your paint — repels water, dirt, and UV damage for years.</div>
+        </div>
+      </div>
+ 
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&q=80" alt="Starlight Headliner">
+        <div class="service-card-body">
+          <div class="service-card-name">Starlight Headliners</div>
+          <div class="service-card-desc">Transform your interior with a custom fiber-optic starlight ceiling. The install everyone talks about.</div>
+        </div>
+      </div>
+ 
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1562141961-b8ab0ce9d10a?w=600&q=80" alt="Window Tint">
+        <div class="service-card-body">
+          <div class="service-card-name">Window Tint</div>
+          <div class="service-card-desc">Premium films for heat rejection, UV protection, and a clean blacked-out look.</div>
+        </div>
+      </div>
+ 
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1611016186353-9af58c69a533?w=600&q=80" alt="Vehicle Wraps">
+        <div class="service-card-body">
+          <div class="service-card-name">Wraps</div>
+          <div class="service-card-desc">Full and partial vehicle wraps in any color or finish — matte, gloss, satin, or chrome.</div>
+        </div>
+      </div>
+ 
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?w=600&q=80" alt="Audio Install">
+        <div class="service-card-body">
+          <div class="service-card-name">Audio Install</div>
+          <div class="service-card-desc">Custom audio systems — head units, speakers, subwoofers, and amplifiers installed clean.</div>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
 </section>
-
+ 
 <section class="reviews-section" id="reviews">
-<div class="section-inner">
-<div class="section-eyebrow">Customer Reviews</div>
-<h2 class="section-title">What Wichita<br><em>is saying.</em></h2>
-<div class="reviews-track-wrap" id="reviewsScroll">
-<div class="reviews-track">
-
-<div class="review-card">
-<div class="review-stars">★★★★★</div>
-<div class="review-text">"Kyle did an amazing job and would highly recommend them to everyone. They came and picked up my car and delivered it looking brand new!"</div>
-<div class="review-author">Shawna P.</div>
-</div>
-
-<div class="review-card">
-<div class="review-stars">★★★★★</div>
-<div class="review-text">"Man, I feel like i'm in a new vehicle fresh from the car dealership! Highly Recomment!!"</div>
-<div class="review-author">Mark M.</div>
-</div>
-
-<div class="review-card">
-<div class="review-stars">★★★★★</div>
-<div class="review-text">"Qaulity work and amazing attention to detail done in a timely fasion. Very good value would highly recommend to anyone."</div>
-<div class="review-author">Angelo C.</div>
-</div>
-
-<div class="review-card">
-<div class="review-stars">★★★★★</div>
-<div class="review-text">"Kyle from Nicety came out and did an excellent job on a full detail on my Ram and Ford. Going to be using this company again!"</div>
-<div class="review-author">Dakota C.</div>
-</div>
-
-<div class="review-card">
-<div class="review-stars">★★★★★</div>
-<div class="review-text">"Did an amazing job on my vehicle! Would totally recommend, Super nice and responsive as well!"</div>
-<div class="review-author">Jason S.</div>
-</div>
-
-<div class="review-card">
-<div class="review-stars">★★★★★</div>
-<div class="review-text">"Amazing customer service and results! I have two young kids who destroy my car but Kyle always brings it back to life! Efficient, kind, and reasonably priced!"</div>
-<div class="review-author">Skylar M.</div>
-</div>
-
-</div>
-</div>
-<div class="scroll-hint">← Scroll for more reviews →</div>
-</div>
+  <div class="section-inner">
+    <div class="section-eyebrow">Customer Reviews</div>
+    <h2 class="section-title">What Wichita<br><em>is saying.</em></h2>
+    <div class="reviews-track-wrap" id="reviewsScroll">
+      <div class="reviews-track">
+ 
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-text">"Kyle did an amazing job and would highly recommend them to everyone. They came and picked up my car and delivered it looking brand new!"</div>
+          <div class="review-author">Shawna P.</div>
+        </div>
+ 
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-text">"Man, I feel like i'm in a new vehicle fresh from the car dealership! Highly Recomment!!"</div>
+          <div class="review-author">Mark M.</div>
+        </div>
+ 
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-text">"Qaulity work and amazing attention to detail done in a timely fasion. Very good value would highly recommend to anyone."</div>
+          <div class="review-author">Angelo C.</div>
+        </div>
+ 
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-text">"Kyle from Nicety came out and did an excellent job on a full detail on my Ram and Ford. Going to be using this company again!"</div>
+          <div class="review-author">Dakota C.</div>
+        </div>
+ 
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-text">"Did an amazing job on my vehicle! Would totally recommend, Super nice and responsive as well!"</div>
+          <div class="review-author">Jason S.</div>
+        </div>
+ 
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-text">"Amazing customer service and results! I have two young kids who destroy my car but Kyle always brings it back to life! Efficient, kind, and reasonably priced!"</div>
+          <div class="review-author">Skylar M.</div>
+        </div>
+ 
+      </div>
+    </div>
+    <div class="scroll-hint">← Scroll for more reviews →</div>
+  </div>
 </section>
-
+ 
 <section id="gallery">
-<div class="section-inner">
-<div class="section-eyebrow">Before & After</div>
-<h2 class="section-title">See the Nicety<br><em>difference.</em></h2>
-<div class="ba-track-wrap" id="baScroll">
-<div class="ba-track">
-
-<div class="ba-card">
-<div class="ba-pair">
-<div class="ba-img-wrap">
-<img src="before1.png" alt="Before 1">
-<span class="ba-label">Before</span>
-</div>
-<div class="ba-img-wrap">
-<img src="after1.jpg" alt="After 1">
-<span class="ba-label after">After</span>
-</div>
-</div>
-<div class="ba-caption"></div>
-</div>
-
-<div class="ba-card">
-<div class="ba-pair">
-<div class="ba-img-wrap">
-<img src="before3.png" alt="Before 3">
-<span class="ba-label">Before</span>
-</div>
-<div class="ba-img-wrap">
-<img src="after3.png" alt="After 3">
-<span class="ba-label after">After</span>
-</div>
-</div>
-<div class="ba-caption"></div>
-</div>
-
-<div class="ba-card">
-<div class="ba-pair">
-<div class="ba-img-wrap">
-<img src="before5.png" alt="Before 5">
-<span class="ba-label">Before</span>
-</div>
-<div class="ba-img-wrap">
-<img src="after5.png" alt="After 5">
-<span class="ba-label after">After</span>
-</div>
-</div>
-<div class="ba-caption"></div>
-</div>
-
-<div class="ba-card">
-<div class="ba-pair">
-<div class="ba-img-wrap">
-<img src="before6.png" alt="Before 6">
-<span class="ba-label">Before</span>
-</div>
-<div class="ba-img-wrap">
-<img src="after6.png" alt="After 6">
-<span class="ba-label after">After</span>
-</div>
-</div>
-<div class="ba-caption"></div>
-</div>
-
-<div class="ba-card">
-<div class="ba-pair">
-<div class="ba-img-wrap">
-<img src="before7.png" alt="Before 7">
-<span class="ba-label">Before</span>
-</div>
-<div class="ba-img-wrap">
-<img src="after7.png" alt="After 7">
-<span class="ba-label after">After</span>
-</div>
-</div>
-<div class="ba-caption"></div>
-</div>
-
-</div>
-</div>
-<div class="scroll-hint">← Scroll to see more →</div>
-</div>
+  <div class="section-inner">
+    <div class="section-eyebrow">Before & After</div>
+    <h2 class="section-title">See the Nicety<br><em>difference.</em></h2>
+    <div class="ba-track-wrap" id="baScroll">
+      <div class="ba-track">
+ 
+        <div class="ba-card">
+          <div class="ba-pair">
+            <div class="ba-img-wrap">
+              <img src="before1.png" alt="Before 1">
+              <span class="ba-label">Before</span>
+            </div>
+            <div class="ba-img-wrap">
+              <img src="after1.jpg" alt="After 1">
+              <span class="ba-label after">After</span>
+            </div>
+          </div>
+          <div class="ba-caption">Job 1 — Edit this caption</div>
+        </div>
+ 
+        <div class="ba-card">
+          <div class="ba-pair">
+            <div class="ba-img-wrap">
+              <img src="before3.png" alt="Before 3">
+              <span class="ba-label">Before</span>
+            </div>
+            <div class="ba-img-wrap">
+              <img src="after3.png" alt="After 3">
+              <span class="ba-label after">After</span>
+            </div>
+          </div>
+          <div class="ba-caption">Job 3 — Edit this caption</div>
+        </div>
+ 
+        <div class="ba-card">
+          <div class="ba-pair">
+            <div class="ba-img-wrap">
+              <img src="before5.png" alt="Before 5">
+              <span class="ba-label">Before</span>
+            </div>
+            <div class="ba-img-wrap">
+              <img src="after5.png" alt="After 5">
+              <span class="ba-label after">After</span>
+            </div>
+          </div>
+          <div class="ba-caption">Job 5 — Edit this caption</div>
+        </div>
+ 
+        <div class="ba-card">
+          <div class="ba-pair">
+            <div class="ba-img-wrap">
+              <img src="before6.png" alt="Before 6">
+              <span class="ba-label">Before</span>
+            </div>
+            <div class="ba-img-wrap">
+              <img src="after6.png" alt="After 6">
+              <span class="ba-label after">After</span>
+            </div>
+          </div>
+          <div class="ba-caption">Job 6 — Edit this caption</div>
+        </div>
+ 
+        <div class="ba-card">
+          <div class="ba-pair">
+            <div class="ba-img-wrap">
+              <img src="before7.png" alt="Before 7">
+              <span class="ba-label">Before</span>
+            </div>
+            <div class="ba-img-wrap">
+              <img src="after7.png" alt="After 7">
+              <span class="ba-label after">After</span>
+            </div>
+          </div>
+          <div class="ba-caption">Job 7 — Edit this caption</div>
+        </div>
+ 
+      </div>
+    </div>
+    <div class="scroll-hint">← Scroll to see more →</div>
+  </div>
 </section>
-
+ 
 <section class="cta-section" id="book">
-<div class="section-inner">
-<div class="section-eyebrow">Ready to Book?</div>
-<h2 class="section-title">We come to<br><em>you.</em></h2>
-<p class="cta-sub">No shop drop-off. No waiting around. Just showroom results at your door.</p>
-<a href="#" class="btn-book" id="bookingLink">Book Your Appointment</a>
-<div class="cta-contact">
-<a href="tel:3162083234">(316) 208-3234</a>
-<a href="mailto:nicetymobile@gmail.com">nicetymobile@gmail.com</a>
-</div>
-</div>
+  <div class="section-inner">
+    <div class="section-eyebrow">Ready to Book?</div>
+    <h2 class="section-title">We come to<br><em>you.</em></h2>
+    <p class="cta-sub">No shop drop-off. No waiting around. Just showroom results at your door.</p>
+    <a href="https://meetings-na2.hubspot.com/kyle-rothrock" target="_blank" class="btn-book">Book Your Appointment</a>
+    <div class="cta-contact">
+      <a href="tel:3162083234">(316) 208-3234</a>
+      <a href="mailto:nicetymobile@gmail.com">nicetymobile@gmail.com</a>
+    </div>
+  </div>
 </section>
-
+ 
 <footer>
-<img src="IMG_1648.jpeg" alt="Nicety Auto Services">
-<div class="footer-links">
-<a href="tel:3162083234">(316) 208-3234</a>
-<a href="mailto:nicetymobile@gmail.com">nicetymobile@gmail.com</a>
-<a href="https://www.facebook.com/share/18n3ppVXmS/?mibextid=wwXIfr" target="_blank">Facebook</a>
-<a href="#services">Services</a>
-<a href="#reviews">Reviews</a>
-<a href="#book">Book Now</a>
-</div>
-<div class="footer-copy">© 2026 Nicety Auto Services · Wichita, KS · All rights reserved.</div>
+  <img src="IMG_1648.jpeg" alt="Nicety Auto Services">
+  <div class="footer-links">
+    <a href="tel:3162083234">(316) 208-3234</a>
+    <a href="mailto:nicetymobile@gmail.com">nicetymobile@gmail.com</a>
+    <a href="https://www.facebook.com/share/18n3ppVXmS/?mibextid=wwXIfr" target="_blank">Facebook</a>
+    <a href="#services">Services</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#book">Book Now</a>
+  </div>
+  <div class="footer-copy">© 2026 Nicety Auto Services · Wichita, KS · All rights reserved.</div>
 </footer>
-
+ 
 <script>
 function dragScroll(el) {
-let isDown = false, startX, scrollLeft;
-el.addEventListener('mousedown', e => { isDown = true; el.style.cursor = 'grabbing'; startX = e.pageX - el.offsetLeft; scrollLeft = el.scrollLeft; });
-el.addEventListener('mouseleave', () => { isDown = false; el.style.cursor = 'grab'; });
-el.addEventListener('mouseup', () => { isDown = false; el.style.cursor = 'grab'; });
-el.addEventListener('mousemove', e => { if (!isDown) return; e.preventDefault(); const x = e.pageX - el.offsetLeft; el.scrollLeft = scrollLeft - (x - startX) * 1.5; });
+  let isDown = false, startX, scrollLeft;
+  el.addEventListener('mousedown', e => { isDown = true; el.style.cursor = 'grabbing'; startX = e.pageX - el.offsetLeft; scrollLeft = el.scrollLeft; });
+  el.addEventListener('mouseleave', () => { isDown = false; el.style.cursor = 'grab'; });
+  el.addEventListener('mouseup', () => { isDown = false; el.style.cursor = 'grab'; });
+  el.addEventListener('mousemove', e => { if (!isDown) return; e.preventDefault(); const x = e.pageX - el.offsetLeft; el.scrollLeft = scrollLeft - (x - startX) * 1.5; });
 }
 dragScroll(document.getElementById('reviewsScroll'));
 dragScroll(document.getElementById('baScroll'));
 </script>
-
+ 
 </body>
 </html>
