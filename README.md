@@ -411,7 +411,7 @@ section { padding: 64px 16px; }
 </div>
  
 <section class="hero">
-  <img src="IMG_1648.jpeg" alt="Nicety Auto Services Logo" class="hero-logo">
+  <img src="IMG_1311.jpg" alt="Nicety Auto Services Logo" class="hero-logo">
   <div class="hero-eyebrow">Mobile Auto Care · Wichita, KS</div>
   <h1 class="hero-title">Your car deserves<br><em>Nicety.</em></h1>
   <p class="hero-sub">Professional detailing, paint correction, ceramic coating, and more — delivered to your home or office.</p>
@@ -640,7 +640,7 @@ section { padding: 64px 16px; }
 </section>
  
 <footer>
-  <img src="IMG_1648.jpeg" alt="Nicety Auto Services">
+  <img src="IMG_1311.jpg" alt="Nicety Auto Services">
   <div class="footer-links">
     <a href="tel:3162083234">(316) 208-3234</a>
     <a href="mailto:nicetymobile@gmail.com">nicetymobile@gmail.com</a>
@@ -666,3 +666,4 @@ dragScroll(document.getElementById('baScroll'));
  
 </body>
 </html>
+ 
