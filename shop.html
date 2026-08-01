@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +17,7 @@
 }
 html { scroll-behavior: smooth; }
 body { background: var(--black); color: var(--white); font-family: var(--body); font-weight: 300; line-height: 1.6; -webkit-font-smoothing: antialiased; }
-
+ 
 /* TOP BAR */
 .topbar { background: rgba(10,10,10,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; padding: 14px 32px; display: flex; justify-content: space-between; align-items: center; }
 .topbar-left { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--white-dim); }
@@ -24,7 +25,7 @@ body { background: var(--black); color: var(--white); font-family: var(--body); 
 .topbar-right a { font-size: 13px; color: var(--white-dim); text-decoration: none; transition: color 0.2s; }
 .topbar-right a:hover { color: var(--white); }
 .topbar-shop-btn { background: var(--blue); color: #fff !important; padding: 7px 16px; border-radius: 4px; font-weight: 600; letter-spacing: 1px; font-size: 12px !important; box-shadow: 0 0 14px rgba(59,130,246,0.4); }
-
+ 
 /* SHOP HERO */
 .shop-hero { padding: 64px 24px 48px; text-align: center; position: relative; overflow: hidden; }
 .shop-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(59,130,246,0.1) 0%, transparent 60%); pointer-events: none; }
@@ -33,15 +34,15 @@ body { background: var(--black); color: var(--white); font-family: var(--body); 
 .shop-title { font-family: var(--display); font-size: clamp(36px, 6vw, 64px); font-weight: 300; line-height: 1.0; margin-bottom: 12px; }
 .shop-title em { font-style: italic; color: var(--blue); }
 .shop-sub { font-size: 14px; color: var(--white-dim); max-width: 480px; margin: 0 auto; line-height: 1.7; }
-
+ 
 /* BLUE RULE */
 .blue-rule { height: 2px; background: linear-gradient(90deg, transparent, var(--blue), transparent); margin: 0; }
-
+ 
 /* SHOP GRID */
 .shop-section { padding: 64px 24px; }
 .shop-inner { max-width: 1100px; margin: 0 auto; }
 .shop-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
-
+ 
 /* SHOP CARDS */
 .shop-card { background: var(--card); border: 1px solid var(--border); border-radius: 6px; overflow: hidden; transition: border-color 0.3s, transform 0.2s; position: relative; }
 .shop-card:hover { border-color: rgba(59,130,246,0.35); transform: translateY(-2px); }
@@ -56,13 +57,13 @@ body { background: var(--black); color: var(--white); font-family: var(--body); 
 .shop-btn:hover { box-shadow: 0 0 28px rgba(59,130,246,0.6); }
 .shop-btn.coming-soon { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); color: var(--white-dim); box-shadow: none; cursor: default; }
 .coming-soon-badge { position: absolute; top: 14px; right: 14px; background: rgba(0,0,0,0.8); border: 1px solid rgba(59,130,246,0.5); color: var(--blue); font-size: 9px; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; padding: 5px 12px; border-radius: 3px; }
-
+ 
 /* CONTACT STRIP */
 .contact-strip { background: var(--blue-dim); border-top: 1px solid rgba(59,130,246,0.2); border-bottom: 1px solid rgba(59,130,246,0.2); padding: 32px 24px; text-align: center; }
 .contact-strip p { font-size: 14px; color: var(--white-dim); margin-bottom: 12px; }
 .contact-strip a { color: var(--white); font-weight: 600; font-size: 18px; text-decoration: none; margin: 0 16px; }
 .contact-strip a:hover { color: var(--blue); }
-
+ 
 /* FOOTER */
 footer { background: #080808; border-top: 1px solid var(--border); padding: 40px 24px; text-align: center; }
 footer img { width: 120px; margin-bottom: 16px; opacity: 0.9; mix-blend-mode: lighten; }
@@ -70,7 +71,7 @@ footer img { width: 120px; margin-bottom: 16px; opacity: 0.9; mix-blend-mode: li
 .footer-links a { font-size: 13px; color: var(--white-dim); text-decoration: none; }
 .footer-links a:hover { color: var(--white); }
 .footer-copy { font-size: 11px; color: rgba(255,255,255,0.2); letter-spacing: 1px; }
-
+ 
 @media (max-width: 640px) {
 .topbar { padding: 12px 16px; }
 .topbar-left { display: none; }
@@ -79,7 +80,7 @@ footer img { width: 120px; margin-bottom: 16px; opacity: 0.9; mix-blend-mode: li
 </style>
 </head>
 <body>
-
+ 
 <div class="topbar">
   <div class="topbar-left">📍 Wichita, KS & Surrounding Areas</div>
   <div class="topbar-right">
@@ -90,63 +91,48 @@ footer img { width: 120px; margin-bottom: 16px; opacity: 0.9; mix-blend-mode: li
     <a href="shop.html" class="topbar-shop-btn">🛒 Shop</a>
   </div>
 </div>
-
+ 
 <div class="shop-hero">
   <img src="IMG_1311.jpg" alt="Nicety Auto Services">
   <div class="shop-eyebrow">Nicety Auto Services</div>
   <h1 class="shop-title">The Nicety<br><em>Shop.</em></h1>
   <p class="shop-sub">Premium auto care kits — the same products and installs we use on every job, now available for you to take home.</p>
 </div>
-
+ 
 <div class="blue-rule"></div>
-
+ 
 <section class="shop-section">
   <div class="shop-inner">
     <div class="shop-grid">
-
-  <!-- PRODUCT 1 — Starlight Kit (Coming Soon) -->
-<div class="shop-card">
-  <div class="coming-soon-badge">Coming Soon</div>
-
-  <img class="shop-card-img"
-       src="images/starlight-headliner-kit.jpg"
-       alt="Premium Starlight Headliner Kit">
-
-  <div class="shop-card-body">
-    <div class="shop-card-name">Premium Starlight Headliner Kit</div>
-
-    <div class="shop-card-desc">
-      Transform your interior with a full fiber-optic starlight ceiling kit.
-      Everything you need for a professional install — the same quality we use
-      on every job.
-    </div>
-
-    <div class="shop-card-price">
-      Starting at $199.99
-    </div>
-
-    <div class="shop-btn coming-soon">
-      Coming Soon
-    </div>
-  </div>
-</div>
-
-      <!-- PRODUCT 2 — Ambient Lighting Kit (Coming Soon) -->
+ 
+      <!-- PRODUCT 1 — Starlight Kit (Coming Soon) -->
       <div class="shop-card">
         <div class="coming-soon-badge">Coming Soon</div>
-        <img class="shop-card-img" src="https://images.unsplash.com/photo-1558618047-f4f3b8a5a6f5?w=600&q=80" alt="Ambient Lighting Kit" onerror="this.src='https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=600&q=80'">
+        <img class="shop-card-img" src="shop-starlight.jpg" alt="Premium Starlight Headliner Kit">
         <div class="shop-card-body">
-          <div class="shop-card-name">Ambient Lighting Kit</div>
-          <div class="shop-card-desc">Interior ambient lighting kit — available in plug-in and hardwire versions. Customize your cabin with the perfect glow.</div>
-          <div class="shop-card-price">Coming Soon</div>
+          <div class="shop-card-name">Premium Starlight Headliner Kit</div>
+          <div class="shop-card-desc">Transform your interior with a full fiber-optic starlight ceiling kit. Everything you need for a professional install — the same quality we use on every job.</div>
+          <div class="shop-card-price">$199.99 <span class="range">– $369.99</span></div>
           <div class="shop-btn coming-soon">Notify Me When Available</div>
         </div>
       </div>
-
+ 
+      <!-- PRODUCT 2 — Ambient Lighting Kit (Coming Soon) -->
+      <div class="shop-card">
+        <div class="coming-soon-badge">Coming Soon</div>
+        <img class="shop-card-img" src="shop-ambient.jpg" alt="Ambient Lighting Kit">
+        <div class="shop-card-body">
+          <div class="shop-card-name">Ambient Lighting Kit</div>
+          <div class="shop-card-desc">Interior ambient lighting kit — available in plug-in and hardwire versions. Customize your cabin with the perfect glow.</div>
+          <div class="shop-card-price">Starting at $149.99</div>
+          <div class="shop-btn coming-soon">Notify Me When Available</div>
+        </div>
+      </div>
+ 
       <!-- PRODUCT 3 — Ceramic Coating Kit (Coming Soon) -->
       <div class="shop-card">
         <div class="coming-soon-badge">Coming Soon</div>
-        <img class="shop-card-img" src="https://images.unsplash.com/photo-1611016186353-9af58c69a533?w=600&q=80" alt="Ceramic Coating Kit" onerror="this.src='https://images.unsplash.com/photo-1614026480418-bd11fdb9fa06?w=600&q=80'">
+        <img class="shop-card-img" src="shop-ceramic.jpg" alt="Ceramic Coating Kit">
         <div class="shop-card-body">
           <div class="shop-card-name">Ceramic Coating Kit</div>
           <div class="shop-card-desc">Professional-grade ceramic coating kit for long-lasting paint protection. Hydrophobic, UV resistant, and showroom gloss in one application.</div>
@@ -154,17 +140,17 @@ footer img { width: 120px; margin-bottom: 16px; opacity: 0.9; mix-blend-mode: li
           <div class="shop-btn coming-soon">Notify Me When Available</div>
         </div>
       </div>
-
+ 
     </div>
   </div>
 </section>
-
+ 
 <div class="contact-strip">
   <p>Have a question about a product or want to place a custom order? Reach out directly.</p>
   <a href="tel:3162083234">(316) 208-3234</a>
   <a href="mailto:nicetymobile@gmail.com">nicetymobile@gmail.com</a>
 </div>
-
+ 
 <footer>
   <img src="IMG_1311.jpg" alt="Nicety Auto Services">
   <div class="footer-links">
@@ -175,6 +161,7 @@ footer img { width: 120px; margin-bottom: 16px; opacity: 0.9; mix-blend-mode: li
   </div>
   <div class="footer-copy">© 2026 Nicety Auto Services · Wichita, KS · All rights reserved.</div>
 </footer>
-
+ 
 </body>
 </html>
+ 
