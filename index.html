@@ -17,16 +17,18 @@
 }
 html { scroll-behavior: smooth; }
 body { background: var(--black); color: var(--white); font-family: var(--body); font-weight: 300; line-height: 1.6; -webkit-font-smoothing: antialiased; }
-
+ 
 /* TOP BAR */
 .topbar { background: rgba(10,10,10,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; padding: 14px 32px; display: flex; justify-content: space-between; align-items: center; }
 .topbar-left { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--white-dim); }
 .topbar-right { display: flex; gap: 16px; align-items: center; }
 .topbar-right a { font-size: 13px; color: var(--white-dim); text-decoration: none; transition: color 0.2s; }
 .topbar-right a:hover { color: var(--white); }
+.lang-btn { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); color: var(--white-dim); font-size: 12px; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-family: var(--body); transition: background 0.2s, color 0.2s; letter-spacing: 0.5px; }
+.lang-btn:hover { background: rgba(255,255,255,0.12); color: var(--white); }
 .topbar-shop-btn { background: var(--blue); color: #fff !important; padding: 7px 16px; border-radius: 4px; font-weight: 600; letter-spacing: 1px; font-size: 12px !important; box-shadow: 0 0 14px rgba(59,130,246,0.4); transition: box-shadow 0.2s, transform 0.2s !important; }
 .topbar-shop-btn:hover { box-shadow: 0 0 24px rgba(59,130,246,0.7) !important; transform: translateY(-1px); }
-
+ 
 /* HERO */
 .hero { min-height: 92vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 80px 24px 60px; position: relative; overflow: hidden; }
 .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 70% 50% at 50% 20%, rgba(59,130,246,0.1) 0%, transparent 60%), radial-gradient(ellipse 50% 40% at 80% 80%, rgba(59,130,246,0.05) 0%, transparent 50%); pointer-events: none; }
@@ -43,14 +45,14 @@ body { background: var(--black); color: var(--white); font-family: var(--body); 
 .hero-contact .value { font-size: 22px; font-weight: 600; color: var(--white); letter-spacing: 0.5px; transition: color 0.2s; }
 .hero-contact a:hover .value { color: var(--blue); }
 .hero-contact .value.blue { color: var(--blue); }
-
+ 
 /* SECTIONS */
 section { padding: 96px 24px; }
 .section-inner { max-width: 1100px; margin: 0 auto; }
 .section-eyebrow { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: var(--blue); font-weight: 500; margin-bottom: 12px; }
 .section-title { font-family: var(--display); font-size: clamp(36px, 5vw, 58px); font-weight: 300; line-height: 1.1; margin-bottom: 48px; }
 .section-title em { font-style: italic; color: var(--blue); }
-
+ 
 /* SERVICES */
 .services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2px; }
 .service-card { background: var(--card); border: 1px solid var(--border); overflow: hidden; position: relative; transition: border-color 0.3s; }
@@ -60,7 +62,7 @@ section { padding: 96px 24px; }
 .service-card-body { padding: 22px 24px 26px; }
 .service-card-name { font-family: var(--display); font-size: 22px; font-weight: 400; margin-bottom: 8px; }
 .service-card-desc { font-size: 13px; color: var(--white-dim); line-height: 1.65; }
-
+ 
 /* REVIEWS */
 .reviews-section { background: var(--off-black); }
 .reviews-track-wrap { overflow-x: auto; scrollbar-width: none; cursor: grab; -webkit-overflow-scrolling: touch; }
@@ -71,7 +73,7 @@ section { padding: 96px 24px; }
 .review-text { font-size: 13.5px; color: var(--white-dim); line-height: 1.7; margin-bottom: 18px; font-style: italic; }
 .review-author { font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--white); }
 .scroll-hint { font-size: 11px; letter-spacing: 2px; color: rgba(255,255,255,0.2); text-align: center; margin-top: 20px; text-transform: uppercase; }
-
+ 
 /* BEFORE & AFTER */
 .ba-track-wrap { overflow-x: auto; scrollbar-width: none; cursor: grab; -webkit-overflow-scrolling: touch; }
 .ba-track-wrap::-webkit-scrollbar { display: none; }
@@ -83,7 +85,7 @@ section { padding: 96px 24px; }
 .ba-label { position: absolute; bottom: 10px; left: 10px; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; background: rgba(0,0,0,0.7); color: var(--white); padding: 4px 10px; border-radius: 2px; }
 .ba-label.after { background: rgba(59,130,246,0.8); }
 .ba-caption { font-size: 12px; color: var(--white-dim); text-align: center; margin-top: 10px; letter-spacing: 1px; }
-
+ 
 /* CTA */
 .cta-section { background: var(--blue-dim); border-top: 1px solid rgba(59,130,246,0.2); border-bottom: 1px solid rgba(59,130,246,0.2); text-align: center; padding: 80px 24px; }
 .cta-section .section-title { margin-bottom: 16px; }
@@ -91,7 +93,7 @@ section { padding: 96px 24px; }
 .cta-contact { display: flex; gap: 32px; justify-content: center; flex-wrap: wrap; margin-top: 36px; }
 .cta-contact a { font-size: 20px; font-weight: 600; color: var(--white); text-decoration: none; transition: color 0.2s; }
 .cta-contact a:hover { color: var(--blue); }
-
+ 
 /* SHOP */
 .shop-section { background: var(--black); }
 .shop-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
@@ -106,7 +108,7 @@ section { padding: 96px 24px; }
 .shop-btn:hover { box-shadow: 0 0 28px rgba(59,130,246,0.6); }
 .shop-btn.coming-soon { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: var(--white-dim); box-shadow: none; cursor: default; letter-spacing: 2px; }
 .coming-soon-badge { position: absolute; top: 12px; right: 12px; background: rgba(0,0,0,0.75); border: 1px solid rgba(59,130,246,0.4); color: var(--blue); font-size: 9px; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; padding: 4px 10px; border-radius: 3px; }
-
+ 
 /* FOOTER */
 footer { background: #080808; border-top: 1px solid var(--border); padding: 48px 24px; text-align: center; }
 footer img { width: 140px; margin-bottom: 20px; opacity: 0.9; mix-blend-mode: lighten; }
@@ -114,7 +116,7 @@ footer img { width: 140px; margin-bottom: 20px; opacity: 0.9; mix-blend-mode: li
 .footer-links a { font-size: 13px; color: var(--white-dim); text-decoration: none; transition: color 0.2s; }
 .footer-links a:hover { color: var(--white); }
 .footer-copy { font-size: 11px; color: rgba(255,255,255,0.2); letter-spacing: 1px; }
-
+ 
 @media (max-width: 640px) {
 .topbar { padding: 12px 16px; }
 .topbar-left { display: none; }
@@ -129,10 +131,11 @@ section { padding: 64px 16px; }
 </style>
 </head>
 <body>
-
+ 
 <div class="topbar">
   <div class="topbar-left">📍 Wichita, KS & Surrounding Areas</div>
   <div class="topbar-right">
+    <button onclick="toggleLang()" class="lang-btn" id="langBtn">🌐 Español</button>
     <a href="index.html">Home</a>
     <a href="#services">Services</a>
     <a href="#reviews">Reviews</a>
@@ -140,7 +143,7 @@ section { padding: 64px 16px; }
     <a href="shop.html" class="topbar-shop-btn">🛒 Shop</a>
   </div>
 </div>
-
+ 
 <section class="hero">
   <img src="IMG_1311.jpg" alt="Nicety Auto Services Logo" class="hero-logo">
   <div class="hero-eyebrow">Mobile Auto Care · Wichita, KS</div>
@@ -158,57 +161,57 @@ section { padding: 64px 16px; }
     </a>
   </div>
 </section>
-
+ 
 <section id="services">
   <div class="section-inner">
     <div class="section-eyebrow">What We Do</div>
     <h2 class="section-title">Every service your<br>vehicle <em>deserves.</em></h2>
     <div class="services-grid">
-
+ 
       <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1558618047-f4f3b8a5a6f5?w=600&q=80" alt="Mobile Detailing" onerror="this.src='https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=600&q=80'">
+        <img src="service-detailing.jpg" alt="Mobile Detailing">
         <div class="service-card-body">
           <div class="service-card-name">Mobile Detailing</div>
           <div class="service-card-desc">Full interior & exterior detail at your home or office. We bring everything — you just unlock the car.</div>
         </div>
       </div>
-
+ 
       <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=600&q=80" alt="Paint Correction" onerror="this.src='https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=600&q=80'">
+        <img src="service-paint.jpg" alt="Paint Correction">
         <div class="service-card-body">
           <div class="service-card-name">Paint Correction</div>
           <div class="service-card-desc">Remove swirl marks, scratches, and oxidation. Restore your paint to a deeper, truer shine than the day you bought it.</div>
         </div>
       </div>
-
+ 
       <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1611016186353-9af58c69a533?w=600&q=80" alt="Ceramic Coating" onerror="this.src='https://images.unsplash.com/photo-1614026480418-bd11fdb9fa06?w=600&q=80'">
+        <img src="service-ceramic.jpg" alt="Ceramic Coating">
         <div class="service-card-body">
           <div class="service-card-name">Ceramic Coating</div>
           <div class="service-card-desc">Nano-ceramic protection that bonds to your paint — repels water, dirt, and UV damage for years.</div>
         </div>
       </div>
-
+ 
       <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&q=80" alt="Starlight Headliner" onerror="this.src='https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&q=80'">
+        <img src="service-starlight.jpg" alt="Starlight Headliner">
         <div class="service-card-body">
           <div class="service-card-name">Starlight Headliners</div>
           <div class="service-card-desc">Transform your interior with a custom fiber-optic starlight ceiling. The install everyone talks about.</div>
         </div>
       </div>
-
+ 
       <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?w=600&q=80" alt="Audio Install">
+        <img src="service-audio.jpg" alt="Audio Install">
         <div class="service-card-body">
           <div class="service-card-name">Audio Install</div>
           <div class="service-card-desc">Custom audio systems — head units, speakers, subwoofers, and amplifiers installed clean.</div>
         </div>
       </div>
-
+ 
     </div>
   </div>
 </section>
-
+ 
 <section class="reviews-section" id="reviews">
   <div class="section-inner">
     <div class="section-eyebrow">Customer Reviews</div>
@@ -250,7 +253,7 @@ section { padding: 64px 16px; }
     <div class="scroll-hint">← Scroll for more reviews →</div>
   </div>
 </section>
-
+ 
 <section id="gallery">
   <div class="section-inner">
     <div class="section-eyebrow">Before & After</div>
@@ -297,7 +300,7 @@ section { padding: 64px 16px; }
     <div class="scroll-hint">← Scroll to see more →</div>
   </div>
 </section>
-
+ 
 <section class="cta-section" id="book">
   <div class="section-inner">
     <div class="section-eyebrow">Ready to Book?</div>
@@ -310,7 +313,7 @@ section { padding: 64px 16px; }
     </div>
   </div>
 </section>
-
+ 
 <footer>
   <img src="IMG_1311.jpg" alt="Nicety Auto Services">
   <div class="footer-links">
@@ -324,7 +327,7 @@ section { padding: 64px 16px; }
   </div>
   <div class="footer-copy">© 2026 Nicety Auto Services · Wichita, KS · All rights reserved.</div>
 </footer>
-
+ 
 <script>
 function dragScroll(el) {
   let isDown = false, startX, scrollLeft;
@@ -335,6 +338,98 @@ function dragScroll(el) {
 }
 dragScroll(document.getElementById('reviewsScroll'));
 dragScroll(document.getElementById('baScroll'));
+ 
+const translations = {
+  en: {
+    topbarLeft: '📍 Wichita, KS & Surrounding Areas',
+    langBtn: '🌐 Español',
+    heroEyebrow: 'Mobile Auto Care · Wichita, KS',
+    heroTitle: 'Your car deserves<br><em>Nicety.</em>',
+    heroSub: 'Professional detailing, paint correction, ceramic coating, and more — delivered to your home or office.',
+    bookBtn: 'Book Now',
+    callLabel: 'Call or Text',
+    emailLabel: 'Email Us',
+    servicesEyebrow: 'What We Do',
+    servicesTitle: 'Every service your<br>vehicle <em>deserves.</em>',
+    reviewsEyebrow: 'Customer Reviews',
+    reviewsTitle: 'What Wichita<br><em>is saying.</em>',
+    galleryEyebrow: 'Before & After',
+    galleryTitle: 'See the Nicety<br><em>difference.</em>',
+    ctaEyebrow: 'Ready to Book?',
+    ctaTitle: 'We come to<br><em>you.</em>',
+    ctaSub: 'No shop drop-off. No waiting around. Just showroom results at your door.',
+    ctaBtn: 'Book Your Appointment',
+    scrollHint1: '← Scroll for more reviews →',
+    scrollHint2: '← Scroll to see more →',
+    s1name: 'Mobile Detailing', s1desc: 'Full interior & exterior detail at your home or office. We bring everything — you just unlock the car.',
+    s2name: 'Paint Correction', s2desc: 'Remove swirl marks, scratches, and oxidation. Restore your paint to a deeper, truer shine than the day you bought it.',
+    s3name: 'Ceramic Coating', s3desc: 'Nano-ceramic protection that bonds to your paint — repels water, dirt, and UV damage for years.',
+    s4name: 'Starlight Headliners', s4desc: 'Transform your interior with a custom fiber-optic starlight ceiling. The install everyone talks about.',
+    s5name: 'Audio Install', s5desc: 'Custom audio systems — head units, speakers, subwoofers, and amplifiers installed clean.',
+  },
+  es: {
+    topbarLeft: '📍 Wichita, KS y Áreas Cercanas',
+    langBtn: '🌐 English',
+    heroEyebrow: 'Cuidado Móvil de Autos · Wichita, KS',
+    heroTitle: 'Tu auto merece<br><em>Nicety.</em>',
+    heroSub: 'Detallado profesional, corrección de pintura, recubrimiento cerámico y más — llevado a tu hogar u oficina.',
+    bookBtn: 'Reservar Ahora',
+    callLabel: 'Llama o Envía Mensaje',
+    emailLabel: 'Escríbenos',
+    servicesEyebrow: 'Lo Que Hacemos',
+    servicesTitle: 'Cada servicio que tu<br>vehículo <em>merece.</em>',
+    reviewsEyebrow: 'Reseñas de Clientes',
+    reviewsTitle: 'Lo que Wichita<br><em>está diciendo.</em>',
+    galleryEyebrow: 'Antes y Después',
+    galleryTitle: 'Ve la <em>diferencia</em><br>Nicety.',
+    ctaEyebrow: '¿Listo para Reservar?',
+    ctaTitle: 'Vamos<br><em>a ti.</em>',
+    ctaSub: 'Sin dejar tu auto. Sin esperar. Solo resultados de showroom en tu puerta.',
+    ctaBtn: 'Reservar Tu Cita',
+    scrollHint1: '← Desliza para más reseñas →',
+    scrollHint2: '← Desliza para ver más →',
+    s1name: 'Detallado Móvil', s1desc: 'Detallado completo interior y exterior en tu hogar u oficina. Llevamos todo — solo desbloquea el auto.',
+    s2name: 'Corrección de Pintura', s2desc: 'Eliminamos remolinos, rayones y oxidación. Restauramos tu pintura a un brillo más profundo que el día que lo compraste.',
+    s3name: 'Recubrimiento Cerámico', s3desc: 'Protección nano-cerámica que se une a tu pintura — repele agua, suciedad y daño UV por años.',
+    s4name: 'Cielos Estrellados', s4desc: 'Transforma tu interior con un techo de fibra óptica personalizado. La instalación de la que todos hablan.',
+    s5name: 'Instalación de Audio', s5desc: 'Sistemas de audio personalizados — radios, parlantes, subwoofers y amplificadores instalados limpiamente.',
+  }
+};
+ 
+let currentLang = 'en';
+ 
+function toggleLang() {
+  currentLang = currentLang === 'en' ? 'es' : 'en';
+  const t = translations[currentLang];
+  document.getElementById('langBtn').textContent = t.langBtn;
+  document.querySelector('.topbar-left').textContent = t.topbarLeft;
+  document.querySelector('.hero-eyebrow').textContent = t.heroEyebrow;
+  document.querySelector('.hero-title').innerHTML = t.heroTitle;
+  document.querySelector('.hero-sub').textContent = t.heroSub;
+  document.querySelector('.btn-book').textContent = t.bookBtn;
+  document.querySelectorAll('.hero-contact .label')[0].textContent = t.callLabel;
+  document.querySelectorAll('.hero-contact .label')[1].textContent = t.emailLabel;
+  document.querySelectorAll('.section-eyebrow')[0].textContent = t.servicesEyebrow;
+  document.querySelectorAll('.section-title')[0].innerHTML = t.servicesTitle;
+  document.querySelectorAll('.section-eyebrow')[1].textContent = t.reviewsEyebrow;
+  document.querySelectorAll('.section-title')[1].innerHTML = t.reviewsTitle;
+  document.querySelectorAll('.section-eyebrow')[2].textContent = t.galleryEyebrow;
+  document.querySelectorAll('.section-title')[2].innerHTML = t.galleryTitle;
+  document.querySelectorAll('.section-eyebrow')[3].textContent = t.ctaEyebrow;
+  document.querySelectorAll('.section-title')[3].innerHTML = t.ctaTitle;
+  document.querySelector('.cta-sub').textContent = t.ctaSub;
+  document.querySelector('.cta-section .btn-book').textContent = t.ctaBtn;
+  document.querySelectorAll('.scroll-hint')[0].textContent = t.scrollHint1;
+  document.querySelectorAll('.scroll-hint')[1].textContent = t.scrollHint2;
+  const cards = document.querySelectorAll('.service-card-name');
+  const descs = document.querySelectorAll('.service-card-desc');
+  cards[0].textContent = t.s1name; descs[0].textContent = t.s1desc;
+  cards[1].textContent = t.s2name; descs[1].textContent = t.s2desc;
+  cards[2].textContent = t.s3name; descs[2].textContent = t.s3desc;
+  cards[3].textContent = t.s4name; descs[3].textContent = t.s4desc;
+  cards[4].textContent = t.s5name; descs[4].textContent = t.s5desc;
+}
 </script>
 </body>
 </html>
+ 
