@@ -54,7 +54,9 @@ body { background: var(--black); color: var(--white); font-family: var(--body); 
 .shop-card-price .range { font-size: 13px; color: var(--white-dim); font-weight: 400; margin-left: 4px; }
 .shop-btn { display: block; text-align: center; padding: 13px; background: var(--blue); color: #fff; font-weight: 600; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; border-radius: 4px; box-shadow: 0 0 16px rgba(59,130,246,0.3); transition: box-shadow 0.2s; }
 .shop-btn:hover { box-shadow: 0 0 28px rgba(59,130,246,0.6); }
+.shop-btn::after { content: " ↗"; font-size: 11px; opacity: 0.7; }
 .shop-btn.coming-soon { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); color: var(--white-dim); box-shadow: none; cursor: default; }
+.shop-btn.coming-soon::after { content: ""; }
 .coming-soon-badge { position: absolute; top: 14px; right: 14px; background: rgba(0,0,0,0.8); border: 1px solid rgba(59,130,246,0.5); color: var(--blue); font-size: 9px; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; padding: 5px 12px; border-radius: 3px; }
  
 /* CONTACT STRIP */
@@ -96,7 +98,7 @@ footer img { width: 120px; margin-bottom: 16px; opacity: 0.9; mix-blend-mode: li
   <div class="shop-eyebrow">Nicety Auto Services</div>
   <h1 class="shop-title">The Nicety<br><em>Shop.</em></h1>
   <p class="shop-sub">Premium auto care kits — the same products and installs we use on every job, now available for you to take home.</p>
-  <p class="shop-sub" style="margin-top:12px; font-size:12px;">Questions before these launch? <a href="tel:3162083234" style="color:var(--blue); text-decoration:none;">Call or text (316) 208-3234</a>.</p>
+  <p class="shop-sub" style="margin-top:12px; font-size:12px;">Questions before you order? <a href="tel:3162083234" style="color:var(--blue); text-decoration:none;">Call or text (316) 208-3234</a>.</p>
 </div>
  
 <div class="blue-rule"></div>
@@ -105,39 +107,36 @@ footer img { width: 120px; margin-bottom: 16px; opacity: 0.9; mix-blend-mode: li
   <div class="shop-inner">
     <div class="shop-grid">
  
-      <!-- PRODUCT 1 — Starlight Kit (Coming Soon) -->
+      <!-- PRODUCT 1 — Starlight Kit -->
       <div class="shop-card">
-        <div class="coming-soon-badge">Coming Soon</div>
         <img class="shop-card-img" src="shop-starlight.jpg" alt="Premium Starlight Headliner Kit">
         <div class="shop-card-body">
           <div class="shop-card-name">Premium Starlight Headliner Kit</div>
           <div class="shop-card-desc">Transform your interior with a full fiber-optic starlight ceiling kit. Everything you need for a professional install — the same quality we use on every job.</div>
           <div class="shop-card-price">$199.99 <span class="range">– $369.99</span></div>
-          <div class="shop-btn coming-soon">Notify Me When Available</div>
+          <a href="https://square.link/u/Nk3ubxsn" target="_blank" rel="noopener" class="shop-btn">Click to Buy</a>
         </div>
       </div>
  
-      <!-- PRODUCT 2 — Ambient Lighting Kit (Coming Soon) -->
+      <!-- PRODUCT 2 — Ambient Lighting Kit -->
       <div class="shop-card">
-        <div class="coming-soon-badge">Coming Soon</div>
         <img class="shop-card-img" src="shop-ambient.jpg" alt="Ambient Lighting Kit">
         <div class="shop-card-body">
           <div class="shop-card-name">Ambient Lighting Kit</div>
           <div class="shop-card-desc">Interior ambient lighting kit — available in plug-in and hardwire versions. Customize your cabin with the perfect glow.</div>
           <div class="shop-card-price">Starting at $149.99</div>
-          <div class="shop-btn coming-soon">Notify Me When Available</div>
+          <a href="https://square.link/u/QcQYXP4s" target="_blank" rel="noopener" class="shop-btn">Click to Buy</a>
         </div>
       </div>
  
-      <!-- PRODUCT 3 — Ceramic Coating Kit (Coming Soon) -->
+      <!-- PRODUCT 3 — Ceramic Coating Kit -->
       <div class="shop-card">
-        <div class="coming-soon-badge">Coming Soon</div>
         <img class="shop-card-img" src="shop-ceramic.jpg" alt="Ceramic Coating Kit">
         <div class="shop-card-body">
           <div class="shop-card-name">Ceramic Coating Kit</div>
           <div class="shop-card-desc">Professional-grade ceramic coating kit for long-lasting paint protection. Hydrophobic, UV resistant, and showroom gloss in one application.</div>
           <div class="shop-card-price">Starting at $120+</div>
-          <div class="shop-btn coming-soon">Notify Me When Available</div>
+          <a href="https://square.link/u/YWbHqTfn" target="_blank" rel="noopener" class="shop-btn">Click to Buy</a>
         </div>
       </div>
  
