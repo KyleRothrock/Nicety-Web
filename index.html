@@ -4,7 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Premium mobile auto detailing, paint correction, ceramic coating, starlight headliners and more. We come to you in Wichita, KS. Call (316) 208-3234.">
+<link rel="canonical" href="https://nicetyautowichita.com/">
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="Nicety Auto Services — Premium Mobile Auto Care in Wichita, KS">
+<meta property="og:description" content="Premium mobile auto detailing, paint correction, ceramic coating, starlight headliners and more. We come to you in Wichita, KS.">
+<meta property="og:image" content="https://nicetyautowichita.com/IMG_1311.jpg">
+<meta property="og:url" content="https://nicetyautowichita.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nicety Auto Services — Premium Mobile Auto Care in Wichita, KS">
+<meta name="twitter:description" content="Premium mobile auto detailing, paint correction, ceramic coating, starlight headliners and more. We come to you in Wichita, KS.">
+<meta name="twitter:image" content="https://nicetyautowichita.com/IMG_1311.jpg">
 <title>Nicety Auto Services — Premium Mobile Auto Care in Wichita, KS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
@@ -194,7 +206,7 @@ section { padding: 64px 16px; }
     <a href="#reviews">Reviews</a>
     <a href="shop.html">Shop</a>
     <a href="#pricing">Pricing</a>
-    <a href="https://meetings-na2.hubspot.com/kyle-rothrock" target="_blank" class="topbar-shop-btn">Book Now</a>
+    <a href="https://calendly.com/nicetymobile/30min" target="_blank" class="topbar-shop-btn">Book Now</a>
   </div>
 </div>
  
@@ -203,7 +215,7 @@ section { padding: 64px 16px; }
   <div class="hero-eyebrow">Mobile Auto Care · Wichita, KS</div>
   <h1 class="hero-title">Your car deserves<br><em>Nicety.</em></h1>
   <p class="hero-sub">Professional detailing, paint correction, ceramic coating, and more — delivered to your home or office.</p>
-  <a href="https://meetings-na2.hubspot.com/kyle-rothrock" target="_blank" class="btn-book">Book Now</a>
+  <a href="https://calendly.com/nicetymobile/30min" target="_blank" class="btn-book">Book Now</a>
   <div class="hero-contact">
     <a href="tel:3162083234">
       <span class="label">Call or Text</span>
@@ -387,7 +399,7 @@ section { padding: 64px 16px; }
     <div class="section-eyebrow">Ready to Book?</div>
     <h2 class="section-title">We come to<br><em>you.</em></h2>
     <p class="cta-sub">No shop drop-off. No waiting around. Just showroom results at your door.</p>
-    <a href="https://meetings-na2.hubspot.com/kyle-rothrock" target="_blank" class="btn-book">Book Your Appointment</a>
+    <a href="https://calendly.com/nicetymobile/30min" target="_blank" class="btn-book">Book Your Appointment</a>
     <div class="cta-contact">
       <a href="tel:3162083234">(316) 208-3234</a>
       <a href="mailto:nicetymobile@gmail.com">nicetymobile@gmail.com</a>
@@ -481,6 +493,7 @@ let currentLang = 'en';
  
 function toggleLang() {
   currentLang = currentLang === 'en' ? 'es' : 'en';
+  document.documentElement.lang = currentLang;
   const t = translations[currentLang];
   document.getElementById('langBtn').textContent = t.langBtn;
   document.querySelector('.topbar-left').textContent = t.topbarLeft;
